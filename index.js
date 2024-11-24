@@ -2,13 +2,13 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('submitBtn').addEventListener('click', function(event) {
         event.preventDefault();
 
-        // Get the user's input (fitness advice, training plan, or diet plan)
+        // Get the user's input
         var userInput = document.getElementById('question').value.trim();
 
         // Clear the input box
         document.getElementById('question').value = '';
 
-        // Send the input as a POST request to your backend
+        // Send the input as a POST request to the backend
         fetch('http://localhost:8080/fitness/advice', {  // Ensure the URL is correct
             method: 'POST',
             headers: {
