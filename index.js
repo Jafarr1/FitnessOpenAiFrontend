@@ -14,7 +14,9 @@ document.addEventListener('DOMContentLoaded', function() {
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify({ userInput: userInput }) // Send the input as a JSON body
+            body: JSON.stringify({ userInput: userInput }), // Send the input as a JSON body
+            mode: 'no-cors'
+
         })
             .then(response => response.json())
             .then(data => {
