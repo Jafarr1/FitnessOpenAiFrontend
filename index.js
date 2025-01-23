@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('question').value = '';
 
         // Send the input as a POST request to the backend
-        fetch(`https://fitnessbackend-hdb6bbebbhae5b6.northeurope-01.azurewebsites.net/fitness/advice`, {  // Ensure the URL is correct
+        fetch(`https://fitnessbackend-hdb6gbbebbhae5b6.northeurope-01.azurewebsites.net/fitness/advice`, {  // Ensure the URL is correct
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
